@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Pribadi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+header p{
+    opacity:0.9;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+section{
+    margin:40px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:25px;
+    color:#4f46e5;
+    font-size:2rem;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.info-box{
+    background:#eef2ff;
+    padding:15px;
+    border-radius:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#4f46e5;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+.project img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.timeline{
+    border-left:4px solid #4f46e5;
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    text-decoration:none;
+    color:#4f46e5;
+    font-weight:600;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:white;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
+    <h1>Nama Lengkap Anda</h1>
+    <p>Web Developer | UI/UX Designer | Mahasiswa</p>
+</header>
+
+<div class="container">
+
+    <!-- Tentang Saya -->
+    <section>
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="card">
+            <p>
+                Saya adalah seorang individu yang memiliki minat dalam bidang teknologi,
+                pengembangan web, dan desain digital. Saya senang mempelajari hal baru,
+                mengembangkan keterampilan, serta berkontribusi dalam berbagai proyek kreatif.
+            </p>
+        </div>
+    </section>
+
+    <!-- Biodata -->
+    <section>
+        <h2 class="section-title">Data Pribadi</h2>
+        <div class="info-grid">
+            <div class="info-box">
+                <strong>Nama</strong><br>
+                Nama Lengkap Anda
+            </div>
+
+            <div class="info-box">
+                <strong>Tanggal Lahir</strong><br>
+                01 Januari 2000
+            </div>
+
+            <div class="info-box">
+                <strong>Alamat</strong><br>
+                Kota, Provinsi
+            </div>
+
+            <div class="info-box">
+                <strong>Email</strong><br>
+                emailanda@gmail.com
+            </div>
+
+            <div class="info-box">
+                <strong>No. HP</strong><br>
+                08xxxxxxxxxx
+            </div>
+
+            <div class="info-box">
+                <strong>Jenjang Saat Ini</strong><br>
+                Mahasiswa S1 Teknik Informatika
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section>
+        <h2 class="section-title">Pendidikan</h2>
+
+        <div class="card timeline">
+            <div class="timeline-item">
+                <h3>Pendidikan Terakhir</h3>
+                <p>SMA Negeri 1 Contoh (2019 - 2022)</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Pendidikan Saat Ini</h3>
+                <p>Universitas Contoh - Teknik Informatika (2022 - Sekarang)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section>
+        <h2 class="section-title">Keahlian</h2>
+
+        <div class="card">
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">PHP</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">UI/UX Design</span>
+                <span class="skill">Figma</span>
+                <span class="skill">Canva</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek -->
+    <section>
+        <h2 class="section-title">Proyek</h2>
+
+        <div class="project-grid">
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="">
+                <div class="project-content">
+                    <h3>Website Sekolah</h3>
+                    <p>
+                        Website profil sekolah dengan sistem informasi akademik dan berita.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="">
+                <div class="project-content">
+                    <h3>Aplikasi Kasir</h3>
+                    <p>
+                        Sistem kasir berbasis web menggunakan PHP dan MySQL.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="">
+                <div class="project-content">
+                    <h3>Dashboard Data</h3>
+                    <p>
+                        Dashboard visualisasi data menggunakan JavaScript dan Chart.js.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Prestasi -->
+    <section>
+        <h2 class="section-title">Prestasi</h2>
+
+        <div class="card">
+            <ul>
+                <li>Juara 1 Lomba Web Design Tingkat Kabupaten (2023)</li>
+                <li>Finalis Kompetisi UI/UX Nasional (2024)</li>
+                <li>Sertifikat Front-End Developer Professional</li>
+                <li>Peserta Program Magang Industri Teknologi</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sertifikat -->
+    <section>
+        <h2 class="section-title">Sertifikat</h2>
+
+        <div class="card">
+            <ul>
+                <li>Belajar Dasar Pemrograman Web</li>
+                <li>Front-End Web Developer</li>
+                <li>UI/UX Design Fundamental</li>
+                <li>JavaScript Intermediate</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Organisasi -->
+    <section>
+        <h2 class="section-title">Pengalaman Organisasi</h2>
+
+        <div class="card">
+            <ul>
+                <li>Ketua Divisi IT Himpunan Mahasiswa (2024)</li>
+                <li>Panitia Seminar Teknologi Nasional</li>
+                <li>Anggota Komunitas Web Developer</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section>
+        <h2 class="section-title">Kontak</h2>
+
+        <div class="card contact">
+            <p>Email: <a href="mailto:emailanda@gmail.com">emailanda@gmail.com</a></p>
+            <p>Instagram: @usernameanda</p>
+            <p>LinkedIn: linkedin.com/in/usernameanda</p>
+            <p>GitHub: github.com/usernameanda</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Portofolio Pribadi | Dibuat dengan HTML & CSS
+</footer>
+
+</body>
+</html>
